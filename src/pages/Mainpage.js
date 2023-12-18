@@ -1,4 +1,3 @@
-// import { Outlet, Route, Routes } from "react-router-dom";
 import "../css/myreset.css";
 import "../css/common.css";
 import Layout from "./Layout";
