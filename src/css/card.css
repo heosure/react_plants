@@ -1,0 +1,26 @@
+.sec2 .listCon .imgCon {
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.sec2 .imgCon img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec2 .listCon .desc {
+  padding: 1rem;
+}
+.sec2 .listCon .pName {
+  font-weight: bold;
+  color: var(--gray1);
+}
+.sec2 .listCon .pPrice {
+  color: var(--gray3);
+}
+.sec2 .listCon .swiper-button-prev,
+.sec2 .listCon .swiper-button-next {
+  color: var(--point-c2);
+}

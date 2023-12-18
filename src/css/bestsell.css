@@ -1,0 +1,33 @@
+.sec2 ._inner {
+  display: flex;
+  gap: var(--gap-big);
+}
+.sec2 .headline {
+  width: 250px;
+}
+.sec2 .headline p {
+  padding: var(--gap-small) 0;
+  line-height: 1.5;
+}
+.sec2 .listCon {
+  width: calc(100% - 300px);
+}
+.sec2 .listCon .swiper {
+  height: 100%;
+}
+.sec2 .listCon .swiper-slide {
+  border: 1px solid lightblue;
+  overflow: hidden;
+}
+
+@media (max-width: 680px) {
+  .sec2 ._inner {
+    flex-wrap: wrap;
+  }
+  .sec2 .headline {
+    width: 100%;
+  }
+  .sec2 .listCon {
+    width: 100%;
+  }
+}

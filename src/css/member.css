@@ -1,0 +1,76 @@
+.sec5 {
+  overflow: hidden;
+}
+.sec5 h2 {
+  padding: var(--gap-small) 0;
+}
+
+.sec5 .swiper {
+  overflow: visible;
+}
+.sec5 .swiper-slide {
+  width: 70%;
+  height: 100%;
+  background-color: var(--point-c1);
+  border-radius: var(--gap-ss);
+  padding: var(--gap-small);
+  position: relative;
+}
+.sec5 .member {
+  padding-bottom: 160px;
+}
+.sec5 .member .opinion {
+  line-height: 1.6;
+}
+.sec5 .member .score {
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+  padding-left: 20px;
+}
+.sec5 .member .score::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(calc(-50% - 2px));
+}
+
+.sec5 .memberInfo {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  bottom: 0;
+}
+.sec5 .memberInfo::before {
+  content: "\275D";
+  font-size: 100px;
+  position: absolute;
+  top: -20px;
+  color: var(--gray3);
+}
+.sec5 .memberInfo .cateName,
+.sec5 .memberInfo .cateDesc {
+  position: absolute;
+  left: 100%;
+}
+.sec5 .memberInfo .cateName {
+  top: 0;
+  font-weight: 800;
+  color: var(--gray1);
+}
+.sec5 .memberInfo .cateDesc {
+  top: 30px;
+  color: var(--gray3);
+}
+.sec5 .member img {
+  position: absolute;
+  width: 120px;
+  bottom: 0;
+  left: 50px;
+  z-index: 1;
+}
+.sec5 .swiper-button-prev,
+.sec5 .swiper-button-next {
+  display: none;
+}

@@ -1,0 +1,25 @@
+{
+  "short_name": "React_plant",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "plant.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "plant.png",
+      "type": "image/png",
+      "sizes": "300x363"
+    },
+    {
+      "src": "plant.png",
+      "type": "image/png",
+      "sizes": "300x363"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

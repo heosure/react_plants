@@ -1,0 +1,54 @@
+.sec4 {
+  position: relative;
+}
+.sec4 ._inner {
+  background-color: var(--point-c2);
+  padding: 2rem;
+  border-radius: var(--gap-small);
+}
+.sec4 .headling {
+  padding: var(--gap-small) 0;
+  text-align: center;
+}
+.headling p {
+  padding: var(--gap-ss) 0;
+}
+.sec4 .listCon .imgCon {
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+  border-radius: var(--gap-ss);
+}
+.sec4 .listCon .imgCon img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec4 .listCon .desc {
+  color: var(--gray2);
+  text-align: center;
+  padding-top: 1rem;
+}
+.sec4 .listCon .cateName {
+  font-weight: 800;
+  color: var(--gray1);
+}
+.sec4 .listCon .cateDesc,
+.sec4 .listCon .more {
+  opacity: 0;
+  transition: 0.3s;
+}
+.sec4 .swiper-slide.swiper-slide-active {
+  padding-top: var(--gap-big);
+}
+.sec4 .swiper-slide.swiper-slide-active .cateDesc,
+.sec4 .swiper-slide.swiper-slide-active .more {
+  opacity: 1;
+}
+
+.sec4 .swiper-button-prev,
+.sec4 .swiper-button-next {
+  color: var(--point-c2);
+}

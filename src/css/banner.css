@@ -1,0 +1,118 @@
+section.sec1 {
+  padding-top: calc(var(--gap-big) + 100px);
+}
+.sec1 ._inner {
+  background-color: var(--point-c1);
+  border-radius: var(--gap-small);
+  padding: var(--gap-small);
+  position: relative;
+  padding-bottom: calc(var(--gap-big) * 3);
+  overflow: hidden;
+}
+.sec1 h2 {
+  font-size: 6.4rem;
+}
+.sec1 .desc {
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+.sec1 .desc::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50%;
+  background-color: var(--gray3);
+  left: 160px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sec1 .desc p {
+  padding: var(--gap-small) 0;
+  padding-left: var(--gap-small);
+}
+.sec1 .desc span {
+  display: block;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+.sec1 .desc span:nth-of-type(2) {
+  font-size: 1.8rem;
+}
+.sec1 .inputBox {
+  background-color: var(--w1);
+  border-radius: var(--gap-ss);
+  padding: var(--gap-ss);
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.sec1 .inputBox input {
+  flex: 1;
+}
+.sec1 .inputBox input,
+.sec1 .inputBox button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: var(--gap-ss);
+  border-radius: var(--gap-ss);
+  font-size: 1.6rem;
+}
+.sec1 .inputBox button {
+  background-color: var(--point-c1);
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.sec1 .inputBox button:hover {
+  background-color: var(--point-c2);
+}
+.sec1 .imgCon {
+  background-color: var(--gray1);
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  width: 32%;
+  padding-top: 32%;
+  border-radius: 45%;
+  border-bottom-right-radius: 0;
+}
+.sec1 .imgCon img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.sec1 .imgCon::before,
+.sec1 .imgCon::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sec1 .imgCon::before {
+  width: 150px;
+  height: 70px;
+  right: 98%;
+  top: 50%;
+  background-image: url(/public/img/sec1_arrow2.svg);
+}
+.sec1 .imgCon::after {
+  width: 70px;
+  height: 150px;
+  right: 8%;
+  top: -70px;
+  background-image: url(/public/img/sec1_arrow1.svg);
+}
+
+@media (max-width: 680px) {
+  .sec1 ._inner {
+    padding-bottom: calc(var(--gap-big) * 5);
+  }
+  .sec1 .inputBox {
+    width: 100%;
+  }
+}
