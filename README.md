@@ -1,3 +1,5 @@
+개발인원 : 1명
+
 ## react을 기반으로 만든 plant shop 페이지입니다
 
 1. component로 분리
